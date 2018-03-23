@@ -151,11 +151,121 @@ header
     font-size: 24px
     color: #fff
 
+.accordion
+  &--item
+    margin-bottom: 24px
+
+  &-top
+    border: 1px solid rgba(0, 0, 0, 0.2)
+    box-sizing: border-box
+    padding: 57px 247px 57px 246px
+    outline: none
+    border-radius: 20px
+    //margin-bottom: 24px
+    position: relative
+    cursor: pointer
+
+    .icon
+      width: 132px
+      height: 132px
+      border: 1px solid #2B8BCA
+      text-align: center
+      line-height: 132px
+      border-radius: 100%
+      position: absolute
+      left: 55px
+      top: 50%
+      margin-top: -66px
+      font-family: noto_sansitalic
+      color: #2B8BCA
+      font-size: 54px
+
+    .arrowbox
+      width: 138px
+      position: absolute
+      right: 0
+      top: 0
+      height: 100%
+      line-height: 100%
+      text-align: center
+
+      &:before
+        content: url("../images/accordion-arrow.svg")
+        position: absolute
+        top: 50%
+        left: 50%
+        margin-left: -17px
+        margin-top: -12px
+        transition: $transition
+
+    .article
+      font-family: robotoregular
+      color: #212121
+      line-height: 44px
+      font-size: 36px
+      margin-bottom: 16px
+
+    p
+      font-family: robotoregular
+      font-size: 16px
+      line-height: 20px
+
+    &.ui-accordion-header-active
+      border-bottom: none
+      border-radius: 20px 20px 0 0
+      margin-bottom: 0
+
+      .arrowbox
+        &:before
+          transform: rotate(180deg)
+
+  &-bottom
+    //margin-bottom: 24px
+    background-color: #F7F9FC
+    border: 1px solid rgba(0, 0, 0, 0.2)
+    border-radius: 0 0 20px 20px
+    box-sizing: border-box
+    padding: 57px 247px 57px 246px
+
+    &.ui-accordion-content-active
+      border-top: none
+
 .section
   position: relative
 
+  .section-article-cursive
+    display: block
+    width: 100%
+    margin-top: 120px
+    margin-bottom: 56px
+    font-family: noto_sansitalic
+    color: #2B8BCA
+    font-size: 36px
+
+  .infobox
+    box-sizing: border-box
+    padding: 33px 77px 33px 64px
+    position: relative
+    border-radius: 22px
+    border: 1px solid rgba(0, 0, 0, 0.2)
+    margin-bottom: 41px
+    background-color: #fff
+    font-family: robotoregular
+    font-size: 16px
+    line-height: 20px
+    color: #212121
+
+    &.check
+      &:before
+        content: url("../images/check.svg")
+        position: absolute
+        top: 50%
+        margin-top: -12px
+        left: 26px
+
 .section1
   padding-top: 100px
+  min-height: 1076px
 
   &:before
     content: ''
@@ -188,5 +298,150 @@ header
       color: #212121
       font-size: 54px
       line-height: 70px
+
+.section2
+  .mocup
+    position: relative
+
+    &-image
+      margin-top: -400px
+      display: inline-block
+      position: relative
+
+      &:before
+        content: url("../images/play.svg")
+        margin-top: -46px
+        margin-left: -42px
+        top: 50%
+        left: 50%
+        position: absolute
+        transition: $transition
+
+      &:hover
+        &:before
+          opacity: 0.8
+
+
+    &-text
+      position: absolute
+      top: -345px
+      left: 472px
+
+      .emoji
+        font-size: 80px
+        margin-bottom: 40px
+
+      .section-article
+        width: 417px
+        font-size: 36px
+        color: #fff
+
+        &:after
+          content: url("../images/arrow.svg")
+          display: block
+          margin-top: 20px
+
+  .text
+    margin-top: 50px
+    margin-bottom: 41px
+    font-size: 16px
+    line-height: 20px
+
+  .soc-link
+    a
+      margin-bottom: 20px
+      color: #212121
+      display: inline-block
+
+      &:before
+        display: inline-block
+        vertical-align: text-top
+        margin-right: 15px
+
+    &.instagram-icon
+      a:before
+        content: url("../images/inm.svg")
+
+    &.telegram-icon
+      a:before
+        content: url("../images/tg.svg")
+
+.section3
+
+  .emoji
+    font-size: 40px
+    margin-bottom: 15px
+
+  .article
+    font-size: 24px
+    font-family: robotoregular
+    margin-bottom: 27px
+    color: #212121
+
+  .text
+    font-size: 16px
+    font-family: robotoregular
+    line-height: 20px
+    margin-bottom: 45px
+
+.parallax
+  position: relative
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+  &:before
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 9
+    background-color: rgba(36, 36, 36, 0.8)
+.section4
+  &-text
+    font-size: 54px
+    font-family: robotobold
+    padding: 117px 0 139px
+    line-height: 70px
+    color: #fff
+    position: relative
+    z-index: 15
+
+    span
+      background-color: #2b8bca
+
+.section5
+  &-image
+    margin-bottom: 75px
+
+.section7
+  padding-bottom: 80px
+
+.section10
+  padding: 120px 0
+  position: relative
+  background-repeat: no-repeat
+  background-position: top center
+  background-size: cover
+
+  &:before
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+    background-color: rgba(36, 36, 36, 0.8)
+    z-index: 9
+
+  .speakers
+    position: relative
+    z-index: 20
+
+    .color-white
+      color: #fff
 
 /* Header ::end */

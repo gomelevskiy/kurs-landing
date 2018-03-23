@@ -1,0 +1,18 @@
+<svg width="85" height="85" viewBox="0 0 85 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 7</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-6207 2248)">
+<g id="Group 7">
+<g id="Ellipse">
+<use xlink:href="#path0_fill" transform="translate(6207 -2248)" fill="#FFFFFF"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path1_fill" transform="matrix(-4.37114e-08 1 -1 -4.37114e-08 6264 -2216.12)" fill="#2B8BCA"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 85 42.5C 85 65.9721 65.9721 85 42.5 85C 19.0279 85 0 65.9721 0 42.5C 0 19.0279 19.0279 0 42.5 0C 65.9721 0 85 19.0279 85 42.5Z"/>
+<path id="path1_fill" d="M 12.1244 0L 24.2487 21L 0 21L 12.1244 0Z"/>
+</defs>
+</svg>
